@@ -1,6 +1,4 @@
-import static java.lang.Thread.sleep;
-
-public class Resta {
+public class Resta extends Thread{
     public void run(){
         final int CUATRO = 4;
         int multiplo;
