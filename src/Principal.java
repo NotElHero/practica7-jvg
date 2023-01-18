@@ -1,6 +1,9 @@
 public class Principal {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
+        Suma suma = new Suma();
+        suma.run();
+        Resta resta = new Resta();
+        resta.run();
     }
 }
