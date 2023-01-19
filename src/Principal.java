@@ -1,9 +1,9 @@
 public class Principal {
     public static void main(String[] args) {
 
-        Suma suma = new Suma();
-        suma.run();
-        Resta resta = new Resta();
-        resta.run();
+        Multiplos4 multiplos4 = new Multiplos4();
+        multiplos4.run();
+        Multiplos3 multiplos3 = new Multiplos3();
+        multiplos3.run();
     }
 }

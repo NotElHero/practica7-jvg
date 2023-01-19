@@ -1,4 +1,4 @@
-public class Suma extends Thread {
+public class Multiplos4 extends Thread {
         public void run(){
             final int TRES = 3;
             int suma = 0;
