@@ -1,9 +1,9 @@
 public class Multiplos3 extends Thread{
-    public void run(){
-        final int CUATRO = 4;
-        int multiplo;
-        int suma = 0;
+    final int CUATRO = 4;
+    int multiplo;
+    int suma = 0;
 
+    public void run(){
         for (int i = 0; i<50000; i++){
             multiplo = CUATRO * i;
             suma += multiplo;
@@ -11,11 +11,15 @@ public class Multiplos3 extends Thread{
             multiplo = CUATRO;
 
             try {
-                System.out.println("Calculando resultado...");
                 sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    public int getResultado(int suma){
+        this.suma = suma;
+        return suma;
     }
 }
