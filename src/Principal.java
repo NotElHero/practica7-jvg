@@ -2,8 +2,10 @@ import static java.lang.Thread.sleep;
 
 public class Principal {
     public static void main(String[] args) {
+        int resultadoSuma;
         Thread multiplos4 = new Multiplos4();
         multiplos4.start();
+
         Thread multiplos3 = new Multiplos3();
         multiplos3.start();
 
@@ -15,7 +17,5 @@ public class Principal {
                 e.printStackTrace();
             }
         }
-
-
     }
 }

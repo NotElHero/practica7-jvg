@@ -2,6 +2,7 @@ public class Multiplos3 extends Thread{
     final int CUATRO = 4;
     int multiplo;
     int suma = 0;
+    int resultadoSuma;
 
     public void run(){
         for (int i = 0; i<50000; i++){
@@ -16,10 +17,5 @@ public class Multiplos3 extends Thread{
                 throw new RuntimeException(e);
             }
         }
-    }
-
-    public int getResultado(int suma){
-        this.suma = suma;
-        return suma;
     }
 }
