@@ -1,20 +1,14 @@
 public class Multiplos3 extends Thread{
-    static int CUATRO = 4;
+    static int TRES = 3;
     static int SUMA = 0;
     int multiplo;
 
     public void run(){
-        for (int i = 0; i<50000; i++){
-            multiplo = CUATRO * i;
+        for (int i = 0; i<100000; i++){
+            multiplo = TRES * i;
             SUMA += multiplo;
-//            System.out.println(SUMA);
-            multiplo = CUATRO;
-
-            try {
-                sleep(10);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            multiplo = TRES;
         }
+        System.out.println(SUMA);
     }
 }
